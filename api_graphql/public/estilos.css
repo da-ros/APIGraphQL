@@ -1,0 +1,106 @@
+
+thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 7px 10px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.hit-the-floor {
+    color: #fff;
+    font-size: 8em;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    }
+    
+.hit-the-floor {
+    text-align: center;
+}
+    
+
+.listado_usuario {
+    display: flex;
+    /* justify-content: center;     */
+}
+
+.form_usuario {        
+    border: 3px solid #009879; 
+    background-color: #f3f3f3;    
+    text-align: center;    
+    width: 210px;
+    justify-content: center;        
+    position: absolute;    
+    left: 15em;
+    top: 5em;
+    height: 15em;   
+    z-index: 1000; 
+}
+
+.form_usuario_title {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center; 
+    font-weight: bold;
+}
+
+button{
+    background:#120b9a;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:30px;
+    font-size:1em;
+    padding:0 0.5em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    margin-bottom: 10px;
+  }
+  button:hover{
+    background:#fff;
+    color:#120b9a;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #120b9a;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }

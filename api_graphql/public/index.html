@@ -3,20 +3,23 @@
     <head>
         <title>Product App</title>
         <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilos.css" />
     </head>
-    <body onload="fetchProducts()">
-        <h1>Productos</h1>
-        <ul id="product-list"></ul>
-
-        <h2>Agregar Producto</h2>
-        <input type="text" id="productName" placeholder="Nombre del producto">
-        <input type="number" id="productValue" placeholder="Valor del producto">
-        <button onclick="addProduct()">Agregar Producto</button>
-
-        <h2>Modificar Producto</h2>
-        <input type="hidden" id="productId">
-        <input type="text" id="editProductName" placeholder="Nuevo nombre">
-        <input type="number" id="editProductValue" placeholder="Nuevo valor">
-        <button onclick="updateProduct()">Modificar Producto</button>
-    </body>
+    <body onload="fetchProducts()">        
+        <div id="product-list"></div>
+        <div id="form_producto" class="form_usuario" style=" display:none;">  
+            <div class="form_usuario_title">
+                INFORMACION DE PRODUCTO
+            </div>          
+            <input type="hidden" id="id" value=""/>            
+            <input type="text" id="name" value="" placeholder="Ingrese el Producto" style="margin-top: 10px;"/>            
+            <input type="number" id="value" value="" placeholder="Ingrese el Valor" style="margin-top: 10px;"/>            
+            <button onclick="guardar_producto()" style="margin-top: 20px;">Guardar</button>     
+            <button onclick="cancelar_form()" style="margin-top: 20px;">Cancelar</button>                 
+            
+        </div>
+        <footer>        
+            <button onclick="crear_producto()" class="boton">CREAR PRODUCTO</button>            
+        </footer>
+    </body>    
 </html>
